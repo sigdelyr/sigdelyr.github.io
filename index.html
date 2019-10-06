@@ -1,76 +1,92 @@
 <!DOCTYPE html>
-<html lang="en-us">
-​
-<head>
-  <meta charset="utf-8">
-  <title>Yuba Sigdel</title>
-  <link rel="stylesheet" href="style.css" type="text/css" />
-</head>
-<style>
-  a {
-    text-decoration: none;
-    }
-  a :hover {
-    text-decoration: underline;
-  }
-</style>
-​
-<body>
-<header id="top-box">
-<h1>Yuba Sigdel</h1>
-<h4>Data Science Student</h4>
-<img src="http://lorempixel.com/400/200/sports/1/" alt="sports category!" />
-<br />
-<nav>
-    <ul>
-        <li><a href="/projects/">Projects</a></li>
-            </ul>
-          </nav>
-          <section>
-        <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae magna vel lectus accumsan pharetra eget ac mi. Curabitur egestas pellentesque auctor. Nam accumsan ac tortor id bibendum. Praesent ullamcorper euismod pulvinar. Integer a ex eget eros feugiat fringilla. Etiam pellentesque est in nisi pulvinar, vel porttitor nibh commodo. Phasellus fermentum a erat et eleifend. Maecenas ac mauris a sem blandit euismod. Aliquam interdum blandit lacus, a tempor neque lobortis vitae. Etiam fermentum odio turpis, vel ultrices dolor viverra in. Morbi tristique, orci ut dapibus fermentum, tellus elit scelerisque felis, ac volutpat lorem justo at tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam in sem sed risus condimentum venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-</p>
-<p>
-In ultricies mattis molestie. Nam in quam turpis. Fusce dignissim arcu sem, eu maximus orci imperdiet eu. Ut pharetra aliquam mattis. Nunc quis dolor in quam scelerisque ultricies. Sed purus mi, blandit non ornare vel, lacinia eu lectus. Donec augue odio, interdum ut ipsum non, eleifend iaculis metus. Proin nec sem dolor.</p>
-</section>
-<h2>Social Media</h2>
-      <ul>
-        <li><a href="https://github.com//sigdelyr/">Github</a></li>
-        <li><a href="#">Linked In</a></li>
-        <li><a href="http://fscebook.com/sigdelyr">facebook</a></li>
-      </ul>
-    </section>
-    <section>
-<section>
-    <section>
-        <h2>Favorites</h2>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Movies</th>
-              <th>Songs</th>
-              <th>Books</th>
-              <th>Sports</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Titanic</td>
-              <td>Jennifer Lopez - On The Floor ft. Pitbull</td>
-              <td>Beloved</td>
-              <td>Cricket</td>
-              
-            </tr>
-            <tr>
-              <td>Blood diamond</td>
-              <td>shakira waka waka</td>
-              <td>War & Peace</td>
-              <td>Soccor</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+<html>
 
-    </body>
-​
-</html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Web Visualization Dashboard (Latitude)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!--CSS Link-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<!-- Navigation Section -->
+<div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" style="background-color: #0BADA6;" href="index.html">Latitude</a>
+          <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comparisons.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+    
+            </ul>
+          </div>
+        </nav>
+      </div>
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-12">
+            <!-- Left box  -->
+            <div class="box">
+              <h3 class="title">Summary: Latitude vs. X</h3>
+              <hr>
+              <img src="Resources/assets/images/Fig1.png" alt="Max Temperature Graph" width="600" height="400">
+              <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+                accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over
+                500 cities.</p>
+              <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+                Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the
+                source data and visualizations created as part of the analysis, as well as explanations and descriptions of
+                any trends and correlations witnessed.</p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12">
+            <!-- Right Box -->
+            <div class="box">
+              <h5 class="title">Visualizations</h5>
+              <hr>
+        <a href="max_temp.html"> <img src = "Resources/assets/images/Fig1.png" width="175" height="175"></a>
+        <a href="humidity.html"> <img src = "Resources/assets/images/Fig2.png "width="175" height="175"></a>
+        <a href="cloudiness.html"> <img src = "Resources/assets/images/Fig3.png "width="175" height="175"></a>
+        <a href="wind_speed.html"> <img src = "Resources/assets/images/Fig4.png" width="175" height="175"></a>  
+            </div> <!--container div-->
+             </div><!--col-md-4 div-->
+            </div> <!--row div-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Section -->
+      <footer>
+        <div class="footer">Sigdel 2019</div>
+    
+    </html>
